@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 20px;
+            background-color: #f5f5f5;
+            color: #454444;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .list {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+        }
+
+        li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: transform 0.3s;
+        }
+
+        li a:hover {
+            border: 1px solid black;
+            background-color: white;
+            color: green;
+            padding: 8px;
+            border-radius: 10px;
+            transform: scale(1.05);
+        }
+
+        .sec {
+            display: flex;
+            border: 2px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            width: 90%;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 10px;
+            justify-content: center;
+            line-height: 20px;
+        }
+
+        .sec2 {
+            display: flex;
+            max-width: 1200px;
+            width: 90%;
+            justify-content: center;
+            margin: 20px auto;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .a {
+            flex: 1 1 300px;
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .h3 {
+            text-decoration: none;
+            color: green;
+        }
+
+        .h3 a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .a:hover {
+            transform: scale(1.05);
+        }
+
+        .myproject {
+            display: flex;
+            justify-content: center;
+        }
+
+        .aboutme {
+            .about img {
+                border-radius: 10px;
+                max-width: 300px;
+                height: auto;
+                margin-left: 20px;
+            }
+
+        }
+
+        .bhabeshimg {
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .contactme {
+            display: flex;
+            justify-content: center;
+        }
+
+        .inputform {
+            display: flex;
+            justify-content: center;
+            margin: 20px auto;
+            flex-direction: column;
+            max-width: 800px;
+            width: 90%;
+            border: 2px solid #ccc;
+            padding: 20px;
+            height: auto;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            align-items: center;
+            line-height: 10px;
+        }
+
+        input {
+            border: 2px solid #ccc;
+            width: 250px;
+            height: 50px;
+            border-radius: 5px;
+            padding: 1px;
+            transition: transform 0.3s;
+        }
+
+        textarea {
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            width: 250px;
+            height: 50px;
+            transition: transform 0.3s;
+        }
+
+        .btn {
+            background-color: green;
+            color: white;
+            padding: 15px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            width: 100px;
+            margin: 20px;
+            transition: transform 0.3s;
+        }
+
+        footer {
+            width: 100%;
+            background-color: green;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        input:hover,
+        textarea:hover,
+        .btn:hover {
+            transform: scale(1.05);
+            border: 2px solid green;
+        }
+
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .list {
+                flex-wrap: wrap;
+                justify-content: center;
+                padding-top: 10px;
+            }
+
+            .sec {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .fig {
+                margin-top: 15px;
+            }
+
+            .inputform {
+                width: 95%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bhabesh's Portfolio</h1>
+        <nav class="menu">
+            <ul class="list">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h2 class="aboutme">About Me</h2>
+    <main class="main1">
+
+        <section id=sec1 class="sec">
+
+            <article class="article1">
+                <p> Hi! I'm Bhabesh Prasad, a passionate and dedicated learner with a strong interest in software
+                    development, web technologies, and programming. Over the past few years, I've gained hands-on
+                    experience
+                    in Java, PHP, MySQL, HTML, and CSS, building small projects like games, web apps, and interactive
+                    tools.</p><br>
+
+                <p>I enjoy solving problems, learning new technologies, and applying them creatively. My approach
+                    combines
+                    logic, persistence, and attention to detail, which helps me deliver functional and user-friendly
+                    solutions.</p><br>
+
+                <p>Apart from coding, I'm a fitness enthusiast, constantly pushing myself to grow both mentally and
+                    physically. I believe in continuous learning, teamwork, and contributing positively to any project I
+                    take on.</p><br>
+                <p>I'm looking to expand my skills in full-stack development, software design, and real-world
+                    applications,
+                    and I'm excited to work on projects that challenge me and help me grow.</p>
+            </article>
+            <figure class="fig">
+                <img class="bhabeshimg" width="200" src="bhavesh.jpg" alt="Bhavesh's Photo" srcset="">
+                <figcaption class="figcap">This is me Bhabesh Prasad</figcaption>
+            </figure>
+        </section>
+        <h2 class="myproject">My Project</h2>
+        <section class="sec2">
+
+            <article class="a">
+                <h3 class="h3"><a href="https://github.com/bhabeshprasad3-boop/OnlinePaymentSystem.git"
+                        target="_blank">1.OnlinePaymentSystemn</a></h3><br>
+                <p class="p">This is a simple Online Payment System built in Java. It demonstrates OOP concepts like
+                    inheritance,
+                    method overriding, and polymorphism. The program allows users to choose a payment method (Credit
+                    Card, UPI, or PayPal) and processes the payment accordingly.</p>
+            </article>
+            <article class="a">
+                <h3 class="h3"><a href="https://github.com/bhabeshprasad3-boop/FitnessTracker.git"
+                        target="_blank">2.FitnessTracker</a></h3><br>
+                <p class="p">This is a simple Fitness Tracker application built in Java. It demonstrates OOP concepts
+                    like
+                    constructors, encapsulation, and methods. The program stores user information (name, age, weight,
+                    height) and calculates BMI (Body Mass Index) with category results.</p>
+            </article>
+            <article class="a">
+                <h3 class="h3"><a href="https://github.com/bhabeshprasad3-boop/RideSharingSystem.git"
+                        target="_blank">3.RideSharingSystem</a></h3><br>
+                <p class="p">This project is a simple Ride Sharing System built in Java using OOP concepts. It has three
+                    main
+                    classes: User → Base class (name, phone number) Driver → Subclass (vehicle type, license number)
+                    Passenger → Subclass (pickup, drop, travel distance, fare calculation)</p>
+            </article>
+        </section>
+        <h2 class="contactme">Contact Me</h2>
+        <section>
+
+            <form class="inputform">
+
+                <input type="text" id="name" name="name" required placeholder="Name"><br><br>
+
+                <input type="email" id="email" name="email" required placeholder="Email"><br><br>
+
+                <textarea name="textarea" id="textarea" rows="4" cols="40" placeholder="Message"
+                    required></textarea><br><br>
+                <button class="btn" type="submit">Submit</button>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Bhabesh Prasad | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
